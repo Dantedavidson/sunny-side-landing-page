@@ -1,0 +1,57 @@
+.services {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include breakpoint-up(medium) {
+    grid-template-columns: 50% 50%;
+  }
+  img {
+  }
+  &__item {
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 29.375rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @include breakpoint-up(medium) {
+      padding-bottom: 3.75rem;
+
+      min-height: 16.6375rem;
+      max-height: 36.458rem;
+    }
+
+    @include breakpoint-up(large) {
+      padding-right: 11rem;
+      padding-left: 11rem;
+      height: 36.875rem;
+    }
+
+    &:nth-child(1) {
+      color: $darkDesaturatedCyan;
+      background-image: url("/images/mobile/image-graphic-design.jpg");
+
+      @include breakpoint-up(medium) {
+        background-image: url("/images/desktop/image-graphic-design.jpg");
+      }
+    }
+
+    &:nth-child(2) {
+      color: $darkBlue;
+      background-image: url("/images/mobile/image-photography.jpg");
+
+      @include breakpoint-up(medium) {
+        background-image: url("/images/desktop/image-photography.jpg");
+      }
+    }
+
+    h3 {
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

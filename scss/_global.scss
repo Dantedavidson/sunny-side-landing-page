@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+
+  @include breakpoint-up(medium) {
+    font-size: 2rem;
+  }
+
+  @include breakpoint-up(large) {
+    font-size: 2.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.875rem;
+
+  @include breakpoint-up(large) {
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.375rem;
+  margin-bottom: 1.75rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+
+  @include breakpoint-up(large) {
+    font-size: 1rem;
+  }
+}
+
+h5 {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.875rem;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  line-height: 1.2;
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+
+  @include breakpoint-up(large) {
+    font-size: 1rem;
+  }
+}
+
+a,
+a:visited {
+  font-size: 1.125rem;
+  font-family: "Barlow", sans-serif;
+  text-decoration: none;
+}
+
+.footer__nav a,
+.footer__nav a:visited,
+.header__links a,
+.header__links a:visited {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 3px;
+    width: 0px;
+    transition: all 300ms ease-in-out;
+  }
+}
+
+.footer__nav a:hover::before,
+.footer__nav a:focus::before,
+.header__links a:hover::before,
+.header__links a:focus::before {
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+
+  margin-left: 0.7rem;
+  font-size: 0.875rem;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  color: $veryDarkDesaturatedBlue;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+
+  &__underline {
+    display: block;
+    width: 116%;
+    transform: translateX(-6%);
+    height: 0.625rem;
+    margin-top: -6px;
+    border-radius: 15px;
+    opacity: 0.3;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+    .btn__underline {
+      opacity: 0.5;
+    }
+  }
+  @include breakpoint-up(large) {
+    font-size: 1.125rem;
+  }
+}
+
+//Hide for screen size
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+.hide-for-tablet {
+  @include breakpoint-up(medium) {
+    display: none;
+  }
+}
+
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+//spacing
+
+.content-padding {
+  padding-top: 3.4375rem;
+  padding-left: 2rem;
+  padding-bottom: 3.125rem;
+  padding-right: 2rem;
+
+  @include breakpoint-up(medium) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @include breakpoint-up(large) {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+
+//Flex styles
+
+.flex {
+  display: flex;
+
+  &-col {
+    flex-direction: column;
+  }
+
+  &-j-sb {
+    justify-content: space-between;
+  }
+
+  &-j-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}

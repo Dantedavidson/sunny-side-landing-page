@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./scss/styles.css" />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav flex flex-j-sb">
+        <div class="header__logo">
+          <img src="images/logo.svg" alt="sunnyside" />
+        </div>
+        <div class="header__links hide-for-mobile">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+          <a href="#" class="header__cta">CONTACT</a>
+        </div>
+        <div id="hamburger" class="header__hamburger hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+      <div
+        id="mobile-menu"
+        class="header__menu__wrapper hide-for-desktop has-fade"
+      >
+        <span></span>
+        <div id="mobile-menu" class="header__menu flex flex-col flex-ai-c">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+          <a href="#" class="header__cta">CONTACT</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero__image">
+        <div class="hero__container flex flex-col flex-j-sb flex-ai-c">
+          <h1>WE ARE <br class="hide-for-tablet" />CREATIVES</h1>
+          <img src="/images/icon-arrow-down.svg" alt="Arrow pointing down." />
+        </div>
+      </div>
+    </section>
+
+    <section class="section section1">
+      <div class="section__grid">
+        <img
+          src="/images/mobile/image-transform.jpg"
+          alt=""
+          class="section1__image hide-for-desktop"
+        />
+        <img
+          src="/images/desktop/image-transform.jpg"
+          alt=""
+          class="section1__image hide-for-mobile"
+        />
+
+        <div
+          class="
+            section1__content
+            content-padding
+            flex flex-col flex-ai-c flex-j-c
+          "
+        >
+          <div>
+            <h2>
+              Transform your <br />
+              brand
+            </h2>
+            <p>
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <div class="btn">
+              LEARN MORE <span class="btn__underline"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section2">
+      <div class="section__grid">
+        <img
+          class="section2__image hide-for-desktop"
+          src="/images/mobile/image-stand-out.jpg"
+          alt="A pink cup on a pink background."
+        /><img
+          class="section2__image hide-for-mobile"
+          src="/images/desktop/image-stand-out.jpg"
+          alt="A pink cup on a pink background."
+        />
+        <div
+          class="
+            section2__content
+            content-padding
+            flex flex-col flex-ai-c flex-j-c
+          "
+        >
+          <div>
+            <h2>
+              Stand out to the <br />
+              right audience
+            </h2>
+            <p>
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <div class="btn">
+              LEARN MORE <span class="btn__underline"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="services__item flex content-padding">
+        <h3>Graphic design</h3>
+        <p>
+          Great design makes you memorable. We deliver artwork that underscores
+          your brand message and captures potential clients’ attention.
+        </p>
+      </div>
+      <div class="services__item flex flex-col content-padding">
+        <h3>Photography</h3>
+        <p>
+          Increase your credibility by getting the most stunning, high-quality
+          photos that improve your business image.
+        </p>
+      </div>
+    </section>
+
+    <section class="testimonial content-padding">
+      <h4>CLIENT TESTIMONIALS</h4>
+      <div class="testimonial__container flex flex-ai-c">
+        <div class="testimonial__item">
+          <img
+            src="images/image-emily.jpg"
+            alt="A client marketing director named Emily R."
+          />
+          <p>
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <h4 class="name">Emily R.</h4>
+          <h5>Marketing Director</h5>
+        </div>
+        <div class="testimonial__item">
+          <img
+            src="images/image-thomas.jpg"
+            alt="Thomas S, an operations officer who liked our work."
+          />
+          <p>
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <h4 class="name">Thomas S.</h4>
+          <h5>Chief Operating Officer</h5>
+        </div>
+        <div class="testimonial__item">
+          <img
+            src="images/image-jennie.jpg"
+            alt="Jennie F, bussiness owner who saw great results."
+          />
+          <p>
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <h4 class="name">Jennie F.</h4>
+          <h5>Business Owner</h5>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="gallery__grid">
+        <div class="gallery__item"></div>
+        <div class="gallery__item"></div>
+        <div class="gallery__item"></div>
+        <div class="gallery__item"></div>
+      </div>
+    </section>
+
+    <footer class="footer flex-j-sb content-padding">
+      <div class="footer__logo">
+        <img src="images/logo-green.svg" alt="Sunnyside logo" />
+      </div>
+      <div class="footer__nav flex flex-j-sb">
+        <a href="#">About</a><a href="#">Services</a><a href="#">Projects</a>
+      </div>
+      <div class="footer__social flex flex-j-sb">
+        <a href=""><img src="images/icon-facebook.svg" alt="" /></a>
+        <a href=""><img src="images/icon-instagram.svg" alt="" /></a>
+        <a href=""><img src="images/icon-twitter.svg" alt="" /></a>
+        <a href=""><img src="images/icon-pinterest.svg" alt="" /></a>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
+
+<!-- 
+
+
+
+
+
+
+About
+Services
+Projects
+Contact -->

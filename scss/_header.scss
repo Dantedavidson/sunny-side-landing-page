@@ -1,0 +1,99 @@
+.header {
+  padding: 2.0625rem 2.9375rem;
+  color: $white;
+  a {
+    &:not(.header__cta) {
+      color: $white;
+    }
+  }
+  &__nav {
+    position: relative;
+  }
+
+  &__logo {
+  }
+
+  &__links {
+    > a {
+      &:before {
+        background-color: $white;
+      }
+      &:not(:last-child) {
+        margin-right: 2.9375rem;
+      }
+    }
+  }
+
+  &__hamburger {
+    cursor: pointer;
+
+    > span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: $white;
+      transition: all 300ms ease-in-out;
+      transform-origin: 0.5px 1.3px;
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+    &.open {
+      span:nth-child(1) {
+        transform: rotate(45deg);
+      }
+      span:nth-child(2) {
+        opacity: 0;
+      }
+      span:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+    }
+    &:hover {
+    }
+  }
+
+  &__cta {
+    font-family: "Fraunces", serif;
+    color: $veryDarkDesaturatedBlue;
+    padding: 17px 29px;
+    background-color: $yellow;
+    border-radius: 50px;
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    @include breakpoint-up(large) {
+      color: $veryDarkDesaturatedBlue;
+      background-color: $white;
+    }
+  }
+  &__menu__wrapper {
+    top: 5.0625rem;
+    left: 50%;
+    width: calc(100vw - 5.875rem);
+    transform: translate(-50%, 0);
+    position: absolute;
+    > span {
+      position: absolute;
+      top: -1.5rem;
+      right: 0px;
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 24px 24px;
+      border-color: transparent transparent $white transparent;
+    }
+  }
+  &__menu {
+    background-color: $white;
+    padding-top: 2.8125rem;
+    padding-bottom: 2.4375rem;
+    > a:not(:last-child) {
+      color: $darkGrayishBlue;
+      margin-bottom: 2.6875rem;
+    }
+  }
+}
