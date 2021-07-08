@@ -31,19 +31,19 @@
 
     &:nth-child(1) {
       color: $darkDesaturatedCyan;
-      background-image: url("images/mobile/image-graphic-design.jpg");
+      background-image: url("../images/mobile/image-graphic-design.jpg");
 
       @include breakpoint-up(medium) {
-        background-image: url("images/desktop/image-graphic-design.jpg");
+        background-image: url("../images/desktop/image-graphic-design.jpg");
       }
     }
 
     &:nth-child(2) {
       color: $darkBlue;
-      background-image: url("images/mobile/image-photography.jpg");
+      background-image: url("../images/mobile/image-photography.jpg");
 
       @include breakpoint-up(medium) {
-        background-image: url("images/desktop/image-photography.jpg");
+        background-image: url("../images/desktop/image-photography.jpg");
       }
     }
 

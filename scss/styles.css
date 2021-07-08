@@ -597,23 +597,23 @@ a:visited {
 
 .services__item:nth-child(1) {
   color: #25564b;
-  background-image: url("images/mobile/image-graphic-design.jpg");
+  background-image: url("../images/mobile/image-graphic-design.jpg");
 }
 
 @media (min-width: 40em) {
   .services__item:nth-child(1) {
-    background-image: url("images/desktop/image-graphic-design.jpg");
+    background-image: url("../images/desktop/image-graphic-design.jpg");
   }
 }
 
 .services__item:nth-child(2) {
   color: #19536b;
-  background-image: url("images/mobile/image-photography.jpg");
+  background-image: url("../images/mobile/image-photography.jpg");
 }
 
 @media (min-width: 40em) {
   .services__item:nth-child(2) {
-    background-image: url("images/desktop/image-photography.jpg");
+    background-image: url("../images/desktop/image-photography.jpg");
   }
 }
 
@@ -730,7 +730,7 @@ a:visited {
 }
 
 .gallery__item:first-child {
-  background-image: url("images/mobile/image-gallery-milkbottles.jpg");
+  background-image: url("../images/mobile/image-gallery-milkbottles.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -738,12 +738,12 @@ a:visited {
 
 @media (min-width: 40em) {
   .gallery__item:first-child {
-    background-image: url("images/desktop/image-gallery-milkbottles.jpg");
+    background-image: url("../images/desktop/image-gallery-milkbottles.jpg");
   }
 }
 
 .gallery__item:nth-child(2) {
-  background-image: url("images/mobile/image-gallery-orange.jpg");
+  background-image: url("../images/mobile/image-gallery-orange.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -751,12 +751,12 @@ a:visited {
 
 @media (min-width: 40em) {
   .gallery__item:nth-child(2) {
-    background-image: url("images/desktop/image-gallery-orange.jpg");
+    background-image: url("../images/desktop/image-gallery-orange.jpg");
   }
 }
 
 .gallery__item:nth-child(3) {
-  background-image: url("images/mobile/image-gallery-cone.jpg");
+  background-image: url("../README.md");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -764,12 +764,12 @@ a:visited {
 
 @media (min-width: 40em) {
   .gallery__item:nth-child(3) {
-    background-image: url("images/desktop/image-gallery-cone.jpg");
+    background-image: url("../images/desktop/image-gallery-cone.jpg");
   }
 }
 
 .gallery__item:last-child {
-  background-image: url("images/mobile/image-gallery-sugar-cubes.jpg");
+  background-image: url("../images/mobile/image-gallery-sugar-cubes.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -777,7 +777,7 @@ a:visited {
 
 @media (min-width: 40em) {
   .gallery__item:last-child {
-    background-image: url("images/desktop/image-gallery-sugarcubes.jpg");
+    background-image: url("../images/desktop/image-gallery-sugarcubes.jpg");
   }
 }
 
