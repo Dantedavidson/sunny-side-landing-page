@@ -75,8 +75,8 @@ a:visited {
 
 .footer__nav a,
 .footer__nav a:visited,
-.header__links a,
-.header__links a:visited {
+.header__links a:not(.header__cta),
+.header__links a:visited:not(.header__cta) {
   position: relative;
 
   &::before {
